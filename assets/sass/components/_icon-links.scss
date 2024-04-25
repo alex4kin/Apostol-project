@@ -2,7 +2,7 @@
 .icon-link {
   color: $txt-color;
 
-  &::before {
+  &::after {
     content: "";
     display: inline-block;
     font-family: "bootstrap-icons";
@@ -12,78 +12,89 @@
     text-decoration: none;
   }
 
-  &__archive-fill::before {
+  &__archive-fill::after {
     content: "\F10C";
   }
 
-  &__star-fill::before {
+  &__star-fill::after {
     content: "\F586";
   }
 
-  &__bookmarks-fill::before {
+  &__bookmarks-fill::after {
     content: "\F1A3";
   }
 
-  &__plus-circle-fill::before {
+  &__plus-circle-fill::after {
     content: "\F4F9";
   }
 
-  &__gear-fill::before {
+  &__gear-fill::after {
     content: "\F3E2";
   }
 
-  &__geo-alt-fill::before {
+  &__geo-alt-fill::after {
     content: "\F3E7";
   }
 
-  &__telegram::before {
+  &__telegram::after {
     content: "\F5B3";
   }
 
-  &__youtube::before {
+  &__youtube::after {
     content: "\F62B";
   }
 
-  &__facebook::before {
+  &__facebook::after {
     content: "\F344";
   }
 
-  &__behance::before {
+  &__behance::after {
     content: "\F65C";
   }
 
-  &__instagram::before {
+  &__instagram::after {
     content: "\F437";
   }
 
-  &__eye-fill::before {
+  &__eye-fill::after {
     content: "\F33E";
   }
 
-  &__eye-fill.open::before {
+  &__eye-fill.open::after {
     content: "\F33F";
   }
 
-  &__bi-book::before {
+  &__bi-book::after {
     content: "\f194";
   }
 
-  &__bi-save::before {
+  &__bi-save::after {
     content: "\f525";
   }
 
-  &__bi-blockquote-left::before {
+  &__bi-blockquote-left::after {
     content: "\f190";
   }
 
-  &__bi-arrow-down-square::before {
+  &__bi-arrow-down-square::after {
     content: "\f126";
     font-size: 20px !important;
-    top: -3px;
   }
 
-  &__bi-bookmarks-fill::before {
+  &__bi-bookmarks-fill::after {
     content: "\f1a3";
+  }
+
+  &__person-check-fill::after {
+    content: "\f4d5";
+  }
+
+  &__people-fill::after {
+    content: "\f4cf";
+  }
+
+  &__hand-thumbs-up-fill::after {
+    content: "\f406";
   }
 
   &.icon-link-only {
@@ -91,8 +102,11 @@
     text-decoration: none;
     opacity: .4;
     text-decoration: none;
+    gap: 0;
+    font-size: 14px;
 
-    &:hover {
+    &:hover,
+    &.active {
       opacity: 1;
     }
 
@@ -100,9 +114,27 @@
       margin-right: 0;
     }
 
-    &::before {
+    // &::before,
+    &::after {
       font-size: 24px;
       margin-right: 0;
     }
   }
+}
+
+.icon-button,
+button.icon-link {
+  border: none;
+  background: none;
+  padding: 0;
+  border-radius: 100%;
+}
+
+.icons-group {
+  min-width: 120px;
+  display: flex;
+  padding-bottom: 4px;
+  place-content: flex-end;
+  align-items: center;
+  gap: 4px;
 }
