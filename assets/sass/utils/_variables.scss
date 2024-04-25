@@ -1,0 +1,93 @@
+$font-family: 'Roboto', 'Tahoma', sans-serif;
+$bootstrap-icons: 'bootstrap-icons';
+
+// Path to images and pictures - sample: #{$img}imgName
+$img: "../img/";
+
+// Define a theme color variable with "$var: get-color('var');"
+$bgBody: get-color('bgBody');
+$bgTheme: get-color('bgTheme');
+
+$txt-color: get-color('txt-color');
+$txt-color-600: get-color('txt-color-600');
+$txt-color-800: get-color('txt-color-800');
+$txt-accent: get-color('txt-accent');
+$txt-form: get-color('txt-form');
+$dark-grey: get-color('dark-grey');
+$light-grey: get-color('light-grey');
+$black: get-color('black');
+$grey: get-color('grey');
+$btn: get-color('btn');
+$btn-dark: get-color('btn-dark');
+$btn-hover: get-color('btn-hover');
+$txt-grey: get-color('txt-grey');
+$txt-white: get-color('txt-white');
+
+$border-figure: get-color('border-figure');
+$border-picture: get-color('border-picture');
+$border-dd: get-color('border-dd');
+$border-col-container: get-color('border-col-container');
+
+$bg-dd-link: get-color('bg-dd-link');
+$bg-app-img: get-color('bg-app-img');
+$bg-col-container: get-color('bg-col-container');
+
+$box-shadow-col-container: get-color('box-shadow-col-container');
+
+// Custom margin / padding values via class name
+$marginRightValues: (
+  4,
+  8,
+  12,
+  16,
+  20,
+  24,
+  28,
+  32,
+  64,
+  96
+);
+
+@each $indent in $marginRightValues {
+  .cmr-#{$indent} {
+    margin-right: #{$indent}px;
+  }
+}
+
+$paddingTopValues: (
+  4,
+  8,
+  12,
+  16,
+  20,
+  24,
+  28,
+  32,
+  64,
+  96
+);
+
+@each $indent in $paddingTopValues {
+  .cpt-#{$indent} {
+    padding-top: #{$indent}px;
+  }
+}
+
+$paddingBottomValues: (
+  4,
+  8,
+  12,
+  16,
+  20,
+  24,
+  28,
+  32,
+  64,
+  96
+);
+
+@each $indent in $paddingBottomValues {
+  .cpb-#{$indent} {
+    padding-bottom: #{$indent}px;
+  }
+}

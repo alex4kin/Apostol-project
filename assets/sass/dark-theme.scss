@@ -1,0 +1,7 @@
+$currentTheme: 'dark';
+// Dark theme
+@import "theme";
+
+html::before {
+  content: "Dark-theme";
+}

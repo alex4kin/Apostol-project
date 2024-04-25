@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <!-- <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest"> -->
+
+  <title>PORTFOLIO</title>
+
+  <link href="assets/fonts/font-roboto.css" rel="stylesheet">
+  <link href="assets/fonts/feather.css" rel="stylesheet">
+  <link href="assets/fonts/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/bootstrap/css/select2.min.css" rel="stylesheet" />
+
+  <link href="assets/css/default-theme.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="body-wrapper">
+
+    <!-- app-Header -->
+    <header class="app-header header sticky">
+      <div class="blury"></div>
+      <div class="container-fluid main-container">
+        <div class="d-flex">
+
+          <!-- LOGO -->
+          <div class="logo-bar">
+            <!-- <a aria-label="Hide Sidebar" class="app-sidebar__toggle" data-bs-toggle="sidebar"
+              href="javascript:void(0)"></a> -->
+            <!-- sidebar-toggle-->
+            <a class="logo-horizontal " href="index.html">
+              <!-- <img src="../assets/img/brand/logo.png" class="header-brand-img desktop-logo" alt="logo">
+              <img src="../assets/img/brand/logo-light.png" class="header-brand-img logo-light" alt="logo"> -->
+              LOGO
+            </a>
+          </div>
+
+          <!-- NAVIGATION -->
+          <nav class="nav collapse" id="navbar">
+            <a class="nav-link active" aria-current="page" href="#">Мой портфель</a>
+            <a class="nav-link" href="#">Презентация</a>
+            <a class="nav-link" href="#">Предложения</a>
+          </nav>
+
+          <!-- HEADER RIGHT ICONS -->
+          <div class="d-flex header-right-icons">
+
+            <div class="dropdown">
+              <a class="header-icon icon-plus dropdown-toggle" href="#" role="button" id="dropdownMenuPlus"
+                data-toggle="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-plus"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuPlus">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <a class="header-icon icon-bell dropdown-toggle" href="#" role="button" id="dropdownMenuBell"
+                data-toggle="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-bell-fill"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuBell">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+
+            <button class="navbar-toggler navresponsive-toggler d-md-none" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon fe fe-more-vertical"></span>
+            </button>
+
+          </div>
+
+        </div>
+      </div>
+    </header>
+    <!-- // app-Header -->
+
+    <!-- app-content -->
+    <main class="main-content page-portfolio">
+
+      <div class="app-bg-image" _hidden></div>
+
+      <section class="app-section mt-5 mb-5">
+        <div class="app-content">
+          <div class="container-fluid">
+
+            <div class="row">
+              <div class="col-lg-3 col-md-5">
+                <div class="col-container col-user">
+                  <figure class="picture-main">
+                    <img src="images/user.jpg" alt="user">
+                  </figure>
+                  <a class="icon-link icon-link__gear-fill text-decoration-none" href="#" title="Settings"></a>
+                  <article class="user-bio">
+                    <h3 class="title text-center">Инженеров</h3>
+                    <h4 class="sub-title text-center">Гениальный конструктор</h4>
+                    <p class="text-center"><span class="icon-link icon-link__geo-alt-fill">Мурманск, Россия</span></p>
+                    <p class="text-center">myportfolio.ru</p>
+                    <p class="socials text-center">
+                      <a href="#" class="icon-link icon-link__telegram icon-link-only"></a>
+                      <a href="#" class="icon-link icon-link__facebook icon-link-only"></a>
+                      <a href="#" class="icon-link icon-link__behance icon-link-only"></a>
+                      <a href="#" class="icon-link icon-link__instagram icon-link-only"></a>
+                    </p>
+                  </article>
+
+                  <div class="dd-collapse -about">
+                    <a class="dd-collapse__link collapsed" data-bs-toggle="collapse" href="#collapseUserCardAbout"
+                      role="button" aria-expanded="false" aria-controls="collapseUserCardAbout">
+                      About me
+                    </a>
+                  </div>
+                  <div class="dd-collapse-item collapse" id="collapseUserCardAbout">
+                    <div class="dd-collapse-item__body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed
+                      when the user
+                      activates the relevant trigger.
+                    </div>
+                  </div>
+                  <div class="dd-collapse -info">
+                    <a class="dd-collapse__link collapsed" data-bs-toggle="collapse" href="#collapseUserCardInfo"
+                      role="button" aria-expanded="false" aria-controls="collapseUserCardInfo">
+                      Info
+                    </a>
+                  </div>
+                  <div class="dd-collapse-item collapse" id="collapseUserCardInfo">
+                    <div class="dd-collapse-item__body">
+                      Some placeholder content for the collapse component. This panel is hidden by default but revealed
+                      when the user
+                      activates the relevant trigger.
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col-lg-9 col-md-7">
+                <div class="col-container col-tabs">
+                  <!-- Tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item active" role="presentation">
+                      <a class="nav-link icon-link icon-link__archive-fill active" id="icon-tab-0" data-bs-toggle="tab"
+                        href="#icon-tabpanel-0" role="tab" aria-controls="icon-tabpanel-0" aria-selected="true">
+                        Проекты
+                      </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link icon-link icon-link__star-fill" id="icon-tab-1" data-bs-toggle="tab"
+                        href="#icon-tabpanel-1" role="tab" aria-controls="icon-tabpanel-1" aria-selected="false">
+                        Достижения
+                      </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <a class="nav-link icon-link icon-link__bookmarks-fill" id="icon-tab-2" data-bs-toggle="tab"
+                        href="#icon-tabpanel-2" role="tab" aria-controls="icon-tabpanel-2" aria-selected="false">
+                        Избранное
+                      </a>
+                    </li>
+                  </ul>
+
+                  <div class="tab-content" id="tab-content">
+
+                    <div class="tab-pane active" id="icon-tabpanel-0" role="tabpanel" aria-labelledby="icon-tab-0">
+                      <div class="tab-pane__header">
+                        <h4 class="title">Конкурсные проекты</h4>
+                        <div class="icons-group">
+                          <a href="#" class="icon-link icon-link__plus-circle-fill icon-link-only"></a>
+                          <a href="#" class="icon-link icon-link__eye-fill icon-link-only"></a>
+                          <a href="#" class="icon-link icon-link__gear-fill icon-link-only"></a>
+                        </div>
+                      </div>
+
+                      <article class="flex-gallery">
+                        <div class="flex-gallery__item">
+                          <figure>
+                            <img src="images/ingrb023-q.jpg" alt="picture">
+                          </figure>
+                          <div class="caption">
+                            <span>Дизайн проект</span>
+                            <a class="icon-link icon-link__eye-fill icon-link-only" href="#"></a>
+                          </div>
+                        </div>
+                        <div class="flex-gallery__item">
+                          <figure>
+                            <img src="images/ingrb019-q.jpg" alt="picture">
+                          </figure>
+                          <div class="caption">
+                            <span>Дизайн проект</span>
+                            <a class="icon-link icon-link__eye-fill icon-link-only" href="#"></a>
+                          </div>
+                        </div>
+                        <div class="flex-gallery__item">
+                          <figure>
+                            <img src="images/ingrb023-q.jpg" alt="picture">
+                          </figure>
+                          <div class="caption">
+                            <span>Дизайн проект</span>
+                            <a class="icon-link icon-link__eye-fill icon-link-only" href="#"></a>
+                          </div>
+                        </div>
+                        <div class="flex-gallery__item">
+                          <figure>
+                            <img src="images/ingrb019-q.jpg" alt="picture">
+                          </figure>
+                          <div class="caption">
+                            <span>Дизайн проект</span>
+                            <a class="icon-link icon-link__eye-fill icon-link-only" href="#"></a>
+                          </div>
+                        </div>
+
+                        <div class="w-100 d-flex justify-content-center py-3">
+                          <button class="bttn bttn-secondary bttn-regular">Показать больше</button>
+                        </div>
+
+                      </article>
+
+                      <div class="divider py-3">
+                        <!-- 'Divider' - Only for separating different elements in a layout, not for use in a project. -->
+                      </div>
+
+                      <!-- Add Project -->
+                      <div class="file-loader add-project">
+                        <div class="file-wrapper">
+                          <!-- <label for="upload-input" class="form-label">
+                            <i class="icon-link icon-link__plus-circle-fill"></i>
+                            <span>Создайте свой первый проект</span>
+                          </label>
+                          <input type="file" id="upload-input" class="form-control" accept=".ifc,.jpg,.png,.pdf" multiple
+                            hidden /> -->
+                          <a href="#" class="form-label">
+                            <i class="icon-link icon-link__plus-circle-fill"></i>
+                            <span>Создайте свой первый проект</span>
+                          </a>
+                        </div>
+                      </div>
+                      <!-- // Add Project -->
+
+                    </div>
+
+                    <div class="tab-pane" id="icon-tabpanel-1" role="tabpanel" aria-labelledby="icon-tab-1">
+
+                      <div class="tab-pane__header">
+                        <h4 class="title">Дипломы и достижения</h4>
+                        <div class="icons-group">
+                          <a href="#" class="icon-link icon-link__plus-circle-fill icon-link-only"></a>
+                          <a href="#" class="icon-link icon-link__eye-fill icon-link-only"></a>
+                          <a href="#" class="icon-link icon-link__gear-fill icon-link-only"></a>
+                        </div>
+                      </div>
+
+                      <article class="grid-gallery">
+                        <div class="grid-gallery__item">
+                          <figure>
+                            <img src="images/diploma-01.jpg" alt="Diploma">
+                          </figure>
+                          <div class="info">
+                            <h4>BIMPRO Олимпиада 2023</h4>
+                            <p>1 место в номинации “Архитектурные решения”</p>
+                            <p class="small-tags">
+                              <span class="small-tags__item">конкурсы и олимпиады</span>
+                              <span class="small-tags__item">моделирование</span>
+                              <span class="small-tags__item">бимпро</span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="grid-gallery__item">
+                          <figure>
+                            <img src="images/diploma-01.jpg" alt="Diploma">
+                          </figure>
+                          <div class="info">
+                            <h4>BIMPRO Конкурс 2022</h4>
+                            <p>1 место в номинации “Архитектурные решения”</p>
+                            <p class="small-tags">
+                              <span class="small-tags__item">конкурсы и олимпиады</span>
+                              <span class="small-tags__item">моделирование</span>
+                              <span class="small-tags__item">бимпро</span>
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+
+                      <div class="tab-pane__header">
+                        <h4 class="title">Статьи</h4>
+                        <div class="icons-group">
+                          <a href="#" class="icon-link icon-link__plus-circle-fill icon-link-only"></a>
+                          <a href="#" class="icon-link icon-link__eye-fill icon-link-only"></a>
+                          <a href="#" class="icon-link icon-link__gear-fill icon-link-only"></a>
+                        </div>
+                      </div>
+
+                      <article class="list-gallery">
+                        <div class="list-gallery__item d-flex justify-content-between">
+                          <div class="txtbox">
+                            <h4>Статья в журнале “Архитектор”</h4>
+                            <p>Статья в журнале “Архитектор”</p>
+                          </div>
+                          <div class="icons-group">
+                            <a href="#" class="icon-link icon-link__bi-blockquote-left icon-link-only"></a>
+                            <a href="#" class="icon-link icon-link__bi-arrow-down-square icon-link-only"></a>
+                            <a href="#" class="icon-link icon-link__bi-book icon-link-only"></a>
+                          </div>
+                        </div>
+                        <div class="list-gallery__item d-flex justify-content-between">
+                          <div class="txtbox">
+                            <h4>Статья в журнале “Архитектор”</h4>
+                            <p>Статья в журнале “Архитектор”</p>
+                          </div>
+                          <div class="icons-group">
+                            <a href="#" class="icon-link icon-link__bi-blockquote-left icon-link-only"></a>
+                            <a href="#" class="icon-link icon-link__bi-arrow-down-square icon-link-only"></a>
+                            <a href="#" class="icon-link icon-link__bi-book icon-link-only"></a>
+                          </div>
+                        </div>
+                        <div class="list-gallery__item d-flex justify-content-between">
+                          <div class="txtbox">
+                            <h4>Статья в журнале “Архитектор”</h4>
+                            <p>Статья в журнале “Архитектор”</p>
+                          </div>
+                          <div class="icons-group">
+                            <a href="#" class="icon-link icon-link__bi-blockquote-left icon-link-only"></a>
+                            <a href="#" class="icon-link icon-link__bi-arrow-down-square icon-link-only"></a>
+                            <a href="#" class="icon-link icon-link__bi-book icon-link-only"></a>
+                          </div>
+                        </div>
+                      </article>
+
+                      <div class="tab-pane__header">
+                        <h4 class="title">Другое</h4>
+                        <div class="icons-group">
+                          <a href="#" class="icon-link icon-link__plus-circle-fill icon-link-only"></a>
+                          <a href="#" class="icon-link icon-link__eye-fill icon-link-only"></a>
+                          <a href="#" class="icon-link icon-link__gear-fill icon-link-only"></a>
+                        </div>
+                      </div>
+
+                      <article class="flex-gallery">
+                        <div class="flex-gallery__item">
+                          <figure>
+                            <img src="images/ingrb023-q.jpg" alt="picture">
+                          </figure>
+                          <div class="caption">
+                            <span>Достижение</span>
+                            <a class="icon-link icon-link__eye-fill icon-link-only" href="#"></a>
+                          </div>
+                        </div>
+                        <div class="flex-gallery__item">
+                          <figure>
+                            <img src="images/ingrb023-q.jpg" alt="picture">
+                          </figure>
+                          <div class="caption">
+                            <span>Достижение</span>
+                            <a class="icon-link icon-link__eye-fill icon-link-only" href="#"></a>
+                          </div>
+                        </div>
+                        <div class="flex-gallery__item">
+                          <figure>
+                            <img src="images/ingrb019-q.jpg" alt="picture">
+                          </figure>
+                          <div class="caption">
+                            <span>Достижение</span>
+                            <a class="icon-link icon-link__eye-fill icon-link-only" href="#"></a>
+                          </div>
+                        </div>
+                        <div class="flex-gallery__item">
+                          <figure>
+                            <img src="images/ingrb023-q.jpg" alt="picture">
+                          </figure>
+                          <div class="caption">
+                            <span>Достижение</span>
+                            <a class="icon-link icon-link__eye-fill icon-link-only" href="#"></a>
+                          </div>
+                        </div>
+
+                        <div class="w-100 d-flex justify-content-center py-3">
+                          <button class="bttn bttn-secondary bttn-regular">Показать больше</button>
+                        </div>
+
+                      </article>
+                    </div>
+
+                    <div class="tab-pane" id="icon-tabpanel-2" role="tabpanel" aria-labelledby="icon-tab-2">
+
+                      <article class="flex-gallery">
+                        <div class="flex-gallery__item">
+                          <figure>
+                            <img src="images/ingrb019-q.jpg" alt="picture">
+                          </figure>
+                          <div class="caption">
+                            <h4>Название<span>автор</span></h4>
+                            <a class="icon-link icon-link__bi-bookmarks-fill icon-link-only" href="#"></a>
+                          </div>
+                        </div>
+                        <div class="flex-gallery__item">
+                          <figure>
+                            <img src="images/ingrb023-q.jpg" alt="picture">
+                          </figure>
+                          <div class="caption">
+                            <h4>Название<span>автор</span></h4>
+                            <a class="icon-link icon-link__bi-bookmarks-fill icon-link-only" href="#"></a>
+                          </div>
+                        </div>
+                        <div class="flex-gallery__item">
+                          <figure>
+                            <img src="images/ingrb019-q.jpg" alt="picture">
+                          </figure>
+                          <div class="caption">
+                            <h4>Название<span>автор</span></h4>
+                            <a class="icon-link icon-link__bi-bookmarks-fill icon-link-only" href="#"></a>
+                          </div>
+                        </div>
+
+                        <div class="flex-gallery__item">
+                          <figure>
+                            <img src="images/ingrb019-q.jpg" alt="picture">
+                          </figure>
+                          <div class="caption">
+                            <h4>Название<span>автор</span></h4>
+                            <a class="icon-link icon-link__bi-bookmarks-fill icon-link-only" href="#"></a>
+                          </div>
+                        </div>
+                        <div class="flex-gallery__item">
+                          <figure>
+                            <img src="images/ingrb023-q.jpg" alt="picture">
+                          </figure>
+                          <div class="caption">
+                            <h4>Название<span>автор</span></h4>
+                            <a class="icon-link icon-link__bi-bookmarks-fill icon-link-only" href="#"></a>
+                          </div>
+                        </div>
+                        <div class="flex-gallery__item">
+                          <figure>
+                            <img src="images/ingrb019-q.jpg" alt="picture">
+                          </figure>
+                          <div class="caption">
+                            <h4>Название<span>автор</span></h4>
+                            <a class="icon-link icon-link__bi-bookmarks-fill icon-link-only" href="#"></a>
+                          </div>
+                        </div>
+
+                        <div class="w-100 d-flex justify-content-center py-3">
+                          <button class="bttn bttn-secondary bttn-regular">Показать больше</button>
+                        </div>
+
+                      </article>
+
+                    </div>
+
+                  </div>
+                  <!-- // Tabs -->
+
+
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <!-- // app-content -->
+
+  </div>
+  <!-- // body-wrapper -->
+
+  <script src="assets/jquery/jquery-3.7.1.min.js" type="text/javascript"></script>
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script src="assets/bootstrap/js/select2.full.min.js" type="text/javascript"></script>
+  <script src="assets/js/jqscript.js" type="text/javascript"></script>
+  <script src="assets/js/script.js" type="text/javascript"></script>
+
+</body>
+
+</html>

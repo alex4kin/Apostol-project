@@ -1,0 +1,55 @@
+// Buttons
+.bttn {
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: .6;
+  height: 40px;
+  border: none;
+  border-radius: 5rem;
+  border: 1px solid rgba(1, 141, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, .12);
+  transition: all .25s ease-in-out;
+  text-decoration: none;
+
+  &.bttn-long {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &.bttn-regular {
+    height: 36px;
+  }
+
+  &.bttn-small {
+    height: 28px;
+  }
+
+  &.bttn-primary {
+    background-color: $btn;
+    color: $txt-white;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $btn-dark;
+      color: $txt-white;
+    }
+  }
+
+  &.bttn-secondary {
+    background-color: #e9ecef;
+    color: $txt-grey;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $txt-grey;
+      color: $txt-white;
+    }
+  }
+}

@@ -1,0 +1,4 @@
+// color theme function, dependencies in utils/: _theme-colors.scss, _variables.scss
+@function get-color($name) {
+  @return map-get(map-get($themes, $currentTheme), $name);
+}

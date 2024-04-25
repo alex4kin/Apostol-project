@@ -1,0 +1,45 @@
+.dd-collapse {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 28px;
+  border-bottom: 1px solid $border-dd;
+
+  &__link {
+    position: relative;
+    background-color: $bg-dd-link;
+    padding: 12px 32px 8px 16px;
+    text-decoration: none;
+    width: 100%;
+    color: $txt-color;
+    font-size: 14px;
+    line-height: 1;
+
+    &::after {
+      content: "\f282";
+      font-family: "bootstrap-icons";
+      line-height: 1;
+      display: block;
+      position: absolute;
+      top: 36%;
+      right: 16px;
+      color: $txt-color;
+      rotate: 180deg;
+      transition: rotate .5s ease;
+    }
+
+    &.collapsed::after {
+      rotate: 0deg;
+    }
+  }
+}
+
+.dd-collapse-item {
+  width: 100%;
+
+  &__body {
+    border: none;
+    font-size: 14px;
+    padding: 16px;
+  }
+}

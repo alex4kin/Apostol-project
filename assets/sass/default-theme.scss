@@ -1,0 +1,7 @@
+$currentTheme: 'default';
+// Default theme
+@import "theme";
+
+html::before {
+  content: "Default-theme";
+}
